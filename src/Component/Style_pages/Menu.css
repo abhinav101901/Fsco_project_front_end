@@ -1,0 +1,141 @@
+.foook {
+    width: 65%;
+    margin-left: 35%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fu-2 {
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.input-group {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.form-control {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.cartImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cartImg img {
+    padding-top: 20px;
+    position: absolute;
+    height: 55px;
+    width: 60px;
+    z-index: 1;
+
+}
+
+.k1 {
+    width: 20px;
+    height: 20px;
+    color: rgb(248, 245, 245);
+    background-color: red;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.7;
+    margin: -10px 0 0 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.foodType img{
+    width: 30px;
+}
+.detail-2{
+    width: 150px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+#slider {
+    position: fixed;
+    left: 0px;
+    width: 250px;
+    height: 50px;
+    background: rgb(145, 145, 161);
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 0 100px 100px 0;
+    margin-top: 15px;
+}
+
+.slide-in {
+    animation: slide-in 0.9s forwards;
+    -webkit-animation: slide-in 0.9s forwards;
+}
+
+.slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+    
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+    
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+
+
+@media screen and (max-width: 768px) {
+.foook{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    width: 300px;
+    height: 200px;
+}
+.fu-2{
+    display: flex;
+    flex-direction: column;
+}
+#slider {
+    position: fixed;
+    left: 0px;
+    width: 250px;
+    height: 50px;
+    background: rgb(145, 145, 161);
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 0 100px 100px 0;
+}
+}
