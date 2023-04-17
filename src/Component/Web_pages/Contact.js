@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import contact from '../Assets/contact.avif'
+import contact from '../Assests/contact.png'
 import '../Style_pages/Contact.css'
 
 function Contact() {
