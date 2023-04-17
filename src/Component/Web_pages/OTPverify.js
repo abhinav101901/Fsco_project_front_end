@@ -11,7 +11,7 @@ import '../Style_pages/OTP.css'
 const OTPverify = () => {
   const [otp, setOtp] = useState("");
   const [ph, setPh] = useState(() => {
-    const saved = "+91 " + localStorage.getItem("phone")
+    const saved = "+91-" + localStorage.getItem("phone")
     return saved
   });
 

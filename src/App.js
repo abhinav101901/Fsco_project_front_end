@@ -11,7 +11,7 @@ import Restorent from './Component/Web_pages/Restorent';
 import SingIn from './Component/Web_pages/SingIn'
 import StepProgressBar from './Component/Web_pages/StepProgressBar'
 import OTP from './Component/Web_pages/OTPverify'
-
+import Contact from './Component/Web_pages/Contact';
 
 function App() {
   return (
@@ -32,6 +32,8 @@ function App() {
       < Route path="SingIn" element={<SingIn/>} />
       < Route path="StepProgressBar" element={<StepProgressBar/>} />
       < Route path="OTP" element={<OTP/>} />
+      < Route path="Contact" element={<Contact/>} />
+      
         
       </Routes>
        <Footer/>
